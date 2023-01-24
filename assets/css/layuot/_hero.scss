@@ -1,0 +1,28 @@
+.hero {
+  background-image: url("/assets/img/hero-background.png");
+  background-size: cover;
+
+  &__wrap {
+    padding-top: 122px;
+    padding-bottom: 254px;
+  }
+
+  &__title {
+    //margin-bottom: 224px!important;
+  }
+
+  &__lead {
+    margin-top: 30px;
+    margin-bottom: 46px;
+  }
+
+  &__button {
+    margin: 18px;
+    padding: 13.5px 32.5px;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
