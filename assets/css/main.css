@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import 'base/typography.css';
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -308,21 +307,218 @@ template {
   display: none;
 }
 
-html {
+* {
   box-sizing: border-box;
 }
 
-a, ul {
+.link {
   text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* magra-700 - latin */
+@font-face {
+  font-family: "Magra";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/assets/fonts/magra-v14-latin-700.woff2") format("woff2"), url("/assets/fonts/magra-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* aleo-regular - latin */
+@font-face {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/assets/fonts/aleo-v11-latin-regular.woff2") format("woff2"), url("/assets/fonts/aleo-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* aleo-italic - latin */
+@font-face {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("/assets/fonts/aleo-v11-latin-italic.woff2") format("woff2"), url("/assets/fonts/aleo-v11-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* aleo-700 - latin */
+@font-face {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/assets/fonts/aleo-v11-latin-700.woff2") format("woff2"), url("/assets/fonts/aleo-v11-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* aleo-700italic - latin */
+@font-face {
+  font-family: "Aleo";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""), url("/assets/fonts/aleo-v11-latin-700italic.woff2") format("woff2"), url("/assets/fonts/aleo-v11-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* red-hat-text-500 - latin */
+@font-face {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("/assets/fonts/red-hat-text-v13-latin-500.woff2") format("woff2"), url("/assets/fonts/red-hat-text-v13-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+  font-family: "Red Hat Text", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .container {
-  /** max-width: $max-width; // * 1 * */
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   width: 100%;
+}
+
+.wrap {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 0.8rem;
+  line-height: 21px;
+  background-color: rgba(242, 120, 92, 0.7);
+  box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__button {
+  padding: 10px 30px;
+}
+
+.hero {
+  background-image: url("/assets/img/hero-background.png");
+  background-size: cover;
+}
+.hero__wrap {
+  padding-top: 122px;
+  padding-bottom: 254px;
+}
+.hero__lead {
+  margin-top: 30px;
+  margin-bottom: 46px;
+}
+.hero__button {
+  margin: 18px;
+  padding: 13.5px 32.5px;
+  font-family: "Red Hat Text", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.button {
+  color: inherit;
+  background: rgb(13, 96, 111);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 2px 3px rgba(13, 96, 111, 0.16);
+  cursor: pointer;
+  transition-property: color, visibility, background-color, transform, box-shadow;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+.button:hover {
+  background-color: #00697c;
+  color: #e6e6e6;
+}
+.button:active {
+  transform: translate(0px, 2px);
+  background-color: #0d606f;
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25), 0 -2px 3px rgba(13, 96, 111, 0.16);
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo::before {
+  margin-right: 6px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("/assets/logo/logo.svg");
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item:last-child {
+  margin-right: 28px;
+}
+.nav__item:not(:last-child) {
+  margin-right: 2.1rem;
+}
+
+.heading {
+  font-family: "Magra", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 892px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+.form .input {
+  flex-grow: 2;
+  padding: 32px 0 37px 41px;
+  border: none;
+  font-family: "Aleo", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.45rem;
+  color: rgba(242, 120, 92, 0.7);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.title {
+  margin: 0;
+  max-width: 892px;
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+
+.lead {
+  font-family: "Aleo", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.form-page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(242, 120, 92, 0.7);
 }
 
 /*# sourceMappingURL=main.css.map */

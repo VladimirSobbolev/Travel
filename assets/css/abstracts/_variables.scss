@@ -1,3 +1,54 @@
 // This file contains all application-wide Sass variables.
 
+// Container's maximum width
+$max-width: 1440px; // plus padding 40px;
+$content-width: 1200px+20px; //content width
+
+// Copy text color
+
+///* Base Colors */
+//$color-canvas:
+//$color-canvas-inverted:
+$color-brand-primary: rgba(242, 120, 92, 0.7);
+$color-brand-secondary: rgba(13, 96, 111, 1);
+//$color-brand-tertiary:
+$color-text-primary: rgba(255, 255, 255, 1);
+//$color-text-secondary:
+//$color-text-inverted:
+$color-text-link: rgba(255, 255, 255, 1);
+//$color-text-ok:
+//$color-text-warn:
+//$color-text-danger:
+$color-ui-primary: rgba(255, 255, 255, 0.7);//пользовательский интерфейс
+//$color-ui-secondary:
+//$color-ui-tertiary:
+//$color-ui-ok:
+//$color-ui-warn:
+//$color-ui-danger:
+//  /* Active State */02.3
+//$hilite-brand-primary:
+//$hilite-brand-secondary:
+//$hilite-brand-tertiary:
+//$hilite-text-primary:
+$hilite-link-primary: rgba(13, 96, 111, 1);
+//$hilite-text-secondary:
+//$hilite-ui-primary:
+//$hilite-ui-secondary:
+//$hilite-ui-tertiary:
+//$hilite-ui-ok:
+//$hilite-ui-warn:
+//$hilite-ui-danger:
+//  /* Inactive State */
+//$dim-brand-primary:
+//$dim-brand-secondary:
+//$dim-brand-tertiary:
+//$dim-text-primary:
+//$dim-text-secondary:
+//$dim-ui-primary:
+//$dim-ui-secondary:
+//$dim-ui-tertiary:
+//$dim-ui-ok:
+//$dim-ui-warn:
+//$dim-ui-danger:
+
 
