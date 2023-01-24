@@ -1,0 +1,13 @@
+.header {
+  font-size: 0.8rem;
+  line-height: 21px;
+  background-color: $color-brand-primary;
+  box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
+  &__wrap {
+    @include flex();
+
+  }
+  &__button {
+    padding: 10px 30px;
+  }
+}

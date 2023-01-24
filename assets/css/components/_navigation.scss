@@ -1,0 +1,11 @@
+.nav {
+  &__list {
+    @include flex();
+  }
+  &__item:last-child {
+    margin-right: 28px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 2.1rem;
+  }
+}
