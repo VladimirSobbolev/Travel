@@ -1,0 +1,21 @@
+.form {
+  @include flex();
+  max-width: 892px;
+  //border: 1 ;
+  background-color: $color-ui-primary;
+  border-radius: 16px;
+
+
+  .input {
+    flex-grow: 2;
+    padding:  32px 0 37px 41px;
+    border: none;
+    font-family: 'Aleo', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.45rem;
+    color: $color-brand-primary;
+    background-color: transparentize($color-ui-primary, 1);
+  }
+}
