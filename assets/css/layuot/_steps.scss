@@ -1,0 +1,8 @@
+.steps {
+  margin-top: 80px;
+  &__subject {
+    padding-bottom: 39px;
+    //padding because margin is redefined  by .subject
+  }
+
+}

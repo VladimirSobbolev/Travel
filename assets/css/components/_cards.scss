@@ -1,0 +1,73 @@
+.cards {
+  @include flex();
+  font-family: 'Aleo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: (24rem/20);
+  text-align: center;
+  color: $color-brand-secondary;
+}
+
+  //! first way fit cards to layout (px to px)
+ //begin
+.card:nth-child(2) {
+  margin-left: 40px;
+}
+
+.card:first-child {
+  margin-left: -24px;
+  flex-basis: 317px;
+}
+
+.card:last-child {
+  margin-right: 13px;
+}
+//end
+
+
+
+//second way fit cards to layout (simpler)
+// thanks to this method, it turns out to place the central block directly in the center, but due to different indents in the layout of the entire card block, the outermost blocks are shifted relative to the layout
+//begin
+//.card {
+//  flex-basis: 317px;
+//}
+//end
+
+
+//third way fit cards to layout (the simplest)
+//.card:nth-child(2) {
+//  padding-left: 65px;
+//}
+
+
+
+.logo-card {
+  margin: 0 auto 30px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background-color: $color-brand-primary;
+
+  .logo-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    //display: inline-block;
+    background-repeat: no-repeat;
+
+    &_1 {
+      background-image: url("/assets/logo/card1.svg");
+    }
+
+    &_2 {
+      background-image: url("/assets/logo/card2.svg");
+    }
+
+    &_3 {
+      background-image: url("/assets/logo/card3.svg");
+    }
+  }
+
+}
