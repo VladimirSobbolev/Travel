@@ -422,6 +422,13 @@ html {
   line-height: 1.6rem;
 }
 
+.steps {
+  margin-top: 80px;
+}
+.steps__subject {
+  padding-bottom: 39px;
+}
+
 .button {
   color: inherit;
   background: rgb(13, 96, 111);
@@ -507,12 +514,70 @@ html {
   line-height: 4.8rem;
 }
 
+.subject {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.65rem;
+  color: rgba(242, 120, 92, 0.7);
+}
+
 .lead {
   font-family: "Aleo", sans-serif;
   font-style: italic;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Aleo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: rgb(13, 96, 111);
+}
+
+.card:nth-child(2) {
+  margin-left: 40px;
+}
+
+.card:first-child {
+  margin-left: -24px;
+  flex-basis: 317px;
+}
+
+.card:last-child {
+  margin-right: 13px;
+}
+
+.logo-card {
+  margin: 0 auto 30px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background-color: rgba(242, 120, 92, 0.7);
+}
+.logo-card .logo-img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo-card .logo-img_1 {
+  background-image: url("/assets/logo/card1.svg");
+}
+.logo-card .logo-img_2 {
+  background-image: url("/assets/logo/card2.svg");
+}
+.logo-card .logo-img_3 {
+  background-image: url("/assets/logo/card3.svg");
 }
 
 .form-page {
