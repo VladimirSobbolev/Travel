@@ -1,4 +1,15 @@
 .cards {
+  // one of methods to do necessary size
+  // begin
+  //max-width: 1179px;
+  //margin: 0 auto;
+  //end
+
+  // second methods to do necessary size
+  // begin
+  padding-left: 11px;
+  padding-right: 12px;
+  // end
   @include flex();
   font-family: 'Aleo', sans-serif;
   font-style: normal;
@@ -9,22 +20,16 @@
   color: $color-brand-secondary;
 }
 
-  //! first way fit cards to layout (px to px)
- //begin
-.card:nth-child(2) {
-  margin-left: 40px;
-}
+//! first way fit cards to layout (px to px)
+//begin
 
 .card:first-child {
-  margin-left: -24px;
   flex-basis: 317px;
+  transform: translateX(-31px);
 }
 
-.card:last-child {
-  margin-right: 13px;
-}
+
 //end
-
 
 
 //second way fit cards to layout (simpler)
@@ -38,9 +43,8 @@
 
 //third way fit cards to layout (the simplest)
 //.card:nth-child(2) {
-//  padding-left: 65px;
+//  padding-left: 67px;
 //}
-
 
 
 .logo-card {

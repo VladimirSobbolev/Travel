@@ -532,6 +532,8 @@ html {
 }
 
 .cards {
+  padding-left: 11px;
+  padding-right: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -544,17 +546,9 @@ html {
   color: rgb(13, 96, 111);
 }
 
-.card:nth-child(2) {
-  margin-left: 40px;
-}
-
 .card:first-child {
-  margin-left: -24px;
   flex-basis: 317px;
-}
-
-.card:last-child {
-  margin-right: 13px;
+  transform: translateX(-31px);
 }
 
 .logo-card {
