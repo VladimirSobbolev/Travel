@@ -18,6 +18,7 @@
 @import 'layuot/hero';
 @import 'layuot/footer';
 @import 'layuot/steps';
+@import 'layuot/destinations';
 
 // 5. Components
 @import 'components/button';
@@ -28,6 +29,10 @@
 @import 'components/titles';
 @import 'components/lead';
 @import 'components/cards';
+@import 'components/countries';
+@import 'components/figure';
+@import 'components/slider';
+@import 'components/dots';
 
 // 6. Page-specific styles
 @import 'pages/home';

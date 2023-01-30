@@ -1,6 +1,7 @@
 .hero {
   background-image: url("/assets/img/hero-background.png");
   background-size: cover;
+  margin-bottom: 80px;
 
   &__wrap {
     padding-top: 122px;
@@ -12,8 +13,8 @@
   }
 
   &__lead {
-    margin-top: 30px;
-    margin-bottom: 46px;
+    margin-top: (30rem/20);
+    margin-bottom: (46rem/20);
   }
 
   &__button {

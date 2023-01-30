@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -313,7 +314,7 @@ template {
 
 .link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: inherit;
 }
 
 .list {
@@ -387,8 +388,8 @@ html {
 
 .header {
   font-size: 0.8rem;
-  line-height: 21px;
-  background-color: rgba(242, 120, 92, 0.7);
+  line-height: 1.05rem;
+  background-color: rgb(242, 120, 92);
   box-shadow: 0 4px 4px rgba(13, 96, 111, 0.5);
 }
 .header__wrap {
@@ -403,14 +404,15 @@ html {
 .hero {
   background-image: url("/assets/img/hero-background.png");
   background-size: cover;
+  margin-bottom: 80px;
 }
 .hero__wrap {
   padding-top: 122px;
   padding-bottom: 254px;
 }
 .hero__lead {
-  margin-top: 30px;
-  margin-bottom: 46px;
+  margin-top: 1.5rem;
+  margin-bottom: 2.3rem;
 }
 .hero__button {
   margin: 18px;
@@ -423,10 +425,34 @@ html {
 }
 
 .steps {
-  margin-top: 80px;
+  margin-bottom: 77px;
 }
 .steps__subject {
   padding-bottom: 39px;
+}
+
+.destinations__subject {
+  padding-bottom: 46px;
+  margin-bottom: 80px;
+}
+.destinations__countries {
+  margin-bottom: 21px;
+}
+.destinations__dots {
+  margin-bottom: 39px;
+}
+.destinations__button {
+  display: block;
+  margin: 0 auto;
+  padding: 11.5px 31px 11.5px 32px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.destinations__button:before {
+  content: "→";
+  font-size: 1.95rem;
+  display: inline-block;
+  margin-right: 12.5px;
 }
 
 .button {
@@ -479,8 +505,8 @@ html {
   font-family: "Magra", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 1.6rem;
+  line-height: 1.95rem;
 }
 
 .form {
@@ -500,7 +526,7 @@ html {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.45rem;
-  color: rgba(242, 120, 92, 0.7);
+  color: rgb(242, 120, 92);
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -520,14 +546,13 @@ html {
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.65rem;
-  color: rgba(242, 120, 92, 0.7);
+  color: rgb(242, 120, 92);
 }
 
 .lead {
   font-family: "Aleo", sans-serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 1rem;
   line-height: 1.2rem;
 }
 
@@ -556,7 +581,7 @@ html {
   width: 100px;
   height: 100px;
   border-radius: 16px;
-  background-color: rgba(242, 120, 92, 0.7);
+  background-color: rgb(242, 120, 92);
 }
 .logo-card .logo-img {
   width: 100%;
@@ -574,10 +599,109 @@ html {
   background-image: url("/assets/logo/card3.svg");
 }
 
+.countries {
+  overflow: hidden;
+}
+.countries__figure {
+  margin: 0 30px;
+  transition: margin 0.5s ease;
+}
+
+.country {
+  max-width: 800px;
+  border-radius: 16px;
+}
+.country__figcaption {
+  position: absolute;
+  top: 718px;
+  left: 15px;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+}
+
+.figure {
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider__button {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 75%;
+  z-index: 2;
+  color: rgb(242, 120, 92);
+  background-color: rgba(13, 96, 111, 0.2);
+  transition-property: background-color, color;
+  transition-duration: 3s;
+  transition-timing-function: ease;
+}
+@media (max-width: 1150px) {
+  .slider__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.slider__button:first-child {
+  left: 0;
+}
+.slider__button:nth-child(2) {
+  right: 0;
+}
+
+.transition-left {
+  margin-left: 1750px;
+}
+
+.transition-right {
+  margin-right: 1750px;
+}
+
+.transition-center {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.disable-button {
+  color: rgba(242, 120, 92, 0.5);
+}
+
+.disable-button {
+  background-color: rgba(13, 96, 111, 0);
+}
+
+.dots {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(242, 120, 92, 0.5);
+  transition: background-color 0.5s ease;
+}
+.dot_active {
+  background-color: rgb(242, 120, 92);
+}
+
 .form-page {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(242, 120, 92, 0.7);
+  background-color: rgb(242, 120, 92);
 }
 
 /*# sourceMappingURL=main.css.map */
