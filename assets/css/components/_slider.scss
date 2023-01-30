@@ -1,0 +1,51 @@
+.slider {
+  position: relative;
+  @include flex(center);
+
+  &__button {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 75%;
+    z-index: 2;
+    color: $color-brand-primary;
+    background-color: transparentize($color-brand-secondary, 0.8);
+    transition-property: background-color, color;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    @media (max-width: $first-breakpoint) {
+      @include flex(center);
+    }
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      right: 0;
+    }
+  }
+}
+
+.transition-left {
+  margin-left: 1750px;
+}
+
+.transition-right {
+  margin-right: 1750px;
+}
+
+.transition-center {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.disable-button {
+  color: transparentize($color-brand-primary, 0.5);
+}
+
+.disable-button {
+  background-color: transparentize($color-brand-secondary, 1);
+}
+
+//transition duration should to be in class of element
