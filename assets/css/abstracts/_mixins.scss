@@ -4,3 +4,9 @@
   justify-content: $justify;
   align-items: $aligh-item;
 }
+
+@mixin slider-transition ($property: margin, $duration: 0.5s, $function: ease){
+  transition: $property $duration $function;
+}
+
+

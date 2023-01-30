@@ -1,0 +1,20 @@
+.countries {
+  overflow: hidden;
+  &__figure {
+    margin: 0 30px;
+    @include slider-transition();
+  }
+}
+
+.country {
+  max-width: 800px;
+  border-radius: 16px;
+  &__figcaption {
+    position: absolute;
+    top: 718px;
+    left: 15px;
+    font-size: (32rem/20);
+    line-height: (42rem/20);
+    text-transform: uppercase;
+  }
+}

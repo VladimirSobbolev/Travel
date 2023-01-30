@@ -4,12 +4,18 @@
 $max-width: 1440px; // plus padding 40px;
 $content-width: 1200px+20px; //content width
 
+//@media breakpoints
+
+$first-breakpoint: 1150px;
+
+
+
 // Copy text color
 
 ///* Base Colors */
 //$color-canvas:
 //$color-canvas-inverted:
-$color-brand-primary: rgba(242, 120, 92, 0.7);
+$color-brand-primary: rgba(242, 120, 92, 1);
 $color-brand-secondary: rgba(13, 96, 111, 1);
 //$color-brand-tertiary:
 $color-text-primary: rgba(255, 255, 255, 1);

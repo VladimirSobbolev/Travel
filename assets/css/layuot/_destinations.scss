@@ -1,0 +1,29 @@
+.destinations {
+  &__subject {
+    padding-bottom: 46px;
+    margin-bottom: 80px;
+  }
+
+  &__countries {
+    margin-bottom: 21px;
+  }
+
+  &__dots{
+    margin-bottom: 39px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 11.5px 31px 11.5px 32px;
+    font-size: (24rem/20);
+    line-height: (32rem/20);
+
+    &:before {
+      content: "\2192";
+      font-size: (39rem/20);
+      display: inline-block;
+      margin-right: 12.5px;
+    }
+  }
+}
