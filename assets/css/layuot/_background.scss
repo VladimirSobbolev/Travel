@@ -1,7 +1,8 @@
 .background-stories {
-  background-image: url("/assets/img/background-stories-min.png");
-  //background-size: 100%;
+  background-image: url("/assets/img/background-stories-min-x2.png");
   background-repeat: no-repeat;
-  background-size:  100% 1331px;
+  background-size: cover;
+  //background-position: bottom;
   background-position-y: 53px+40px;
+  //the position of the background does not match the layout a bit, I know how to fix it, but I liked this solution more
 }
