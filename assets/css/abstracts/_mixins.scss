@@ -5,7 +5,7 @@
   align-items: $aligh-item;
 }
 
-@mixin slider-transition ($property: margin, $duration: 0.5s, $function: ease){
+@mixin slider-transition ($property: transform, $duration: 3s, $function: ease){
   transition: $property $duration $function;
 }
 

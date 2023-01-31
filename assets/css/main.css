@@ -464,6 +464,7 @@ html {
 }
 .destinations__countries {
   margin-bottom: 21px;
+  transition: transform 3s ease;
 }
 .destinations__dots {
   margin-bottom: 39px;
@@ -672,7 +673,7 @@ html {
 }
 .countries__figure {
   margin: 0 30px;
-  transition: margin 0.5s ease;
+  transition: transform 3s ease;
 }
 
 .country {
@@ -697,6 +698,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 3s ease;
 }
 .slider__button {
   display: none;
@@ -725,11 +727,11 @@ html {
 }
 
 .transition-left {
-  margin-left: 1750px;
+  transform: translateX(860px);
 }
 
 .transition-right {
-  margin-right: 1750px;
+  transform: translateX(-860px);
 }
 
 .transition-center {
@@ -760,7 +762,7 @@ html {
   height: 20px;
   border-radius: 50%;
   background-color: rgba(242, 120, 92, 0.5);
-  transition: background-color 0.5s ease;
+  transition: background-color 3s ease;
 }
 .dot_active {
   background-color: rgb(242, 120, 92);

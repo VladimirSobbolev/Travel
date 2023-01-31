@@ -6,44 +6,41 @@ const RIGHT_BUTTON = document.querySelectorAll(".slider__button")[1];
 const LEFT_DOT = document.querySelector(".dot");
 const CENTER_DOT = document.querySelectorAll(".dot")[1];
 const RIGHT_DOT = document.querySelectorAll(".dot")[2];
+const SLIDER = document.querySelector(".slider");
 
 const transitionLeft = () => {
-    LEFT_ITEM.classList.add("transition-left");
+    SLIDER.classList.add("transition-left");
     changeDotLeft()
 }
 
 const transitionCenter = () => {
-    LEFT_ITEM.classList.remove("transition-left");
-    RIGHT_ITEM.classList.remove("transition-right");
+    SLIDER.classList.remove("transition-left");
+    SLIDER.classList.remove("transition-right");
     changeDotCenter()
 }
 
 const transitionRight = () => {
-    RIGHT_ITEM.classList.add("transition-right");
+    SLIDER.classList.add("transition-right");
     changeDotRight()
 }
 
 const transitionButtonLeft = () => {
-    if (RIGHT_ITEM.classList.contains("transition-right")) {
+    if (SLIDER.classList.contains("transition-right")) {
         RIGHT_BUTTON.classList.remove("disable-button");
-        RIGHT_ITEM.classList.remove("transition-right");
-        changeDotCenter()
+        transitionCenter();
     } else {
-        LEFT_ITEM.classList.add("transition-left");
+        transitionLeft();
         LEFT_BUTTON.classList.add("disable-button");
-        changeDotLeft()
     }
 }
 
 const transitionButtonRight = () => {
-    if (LEFT_ITEM.classList.contains("transition-left")) {
+    if (SLIDER.classList.contains("transition-left")) {
         LEFT_BUTTON.classList.remove("disable-button");
-        LEFT_ITEM.classList.remove("transition-left");
-        changeDotCenter()
+        transitionCenter()
     } else {
-        RIGHT_ITEM.classList.add("transition-right");
         RIGHT_BUTTON.classList.add("disable-button");
-        changeDotRight()
+        transitionRight();
     }
 }
 

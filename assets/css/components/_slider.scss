@@ -1,6 +1,7 @@
 .slider {
   position: relative;
   @include flex(center);
+  @include slider-transition();
 
   &__button {
     display: none;
@@ -28,11 +29,12 @@
 }
 
 .transition-left {
-  margin-left: 1750px;
+  //margin-left: 1750px;
+  transform: translateX(860px);
 }
 
 .transition-right {
-  margin-right: 1750px;
+  transform: translateX(-860px);
 }
 
 .transition-center {
