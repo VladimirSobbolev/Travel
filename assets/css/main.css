@@ -430,6 +430,24 @@ html {
   line-height: 1.6rem;
 }
 
+.footer__wrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.footer__paragraph {
+  grid-column: 5/9;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.05rem;
+}
+.footer__media {
+  grid-column: 11/13;
+}
+.footer__media:not(:last-child) {
+  margin-right: 24px;
+}
+
 .steps {
   margin-bottom: 77px;
 }
@@ -465,7 +483,7 @@ html {
 }
 
 .travel-stories {
-  padding-bottom: 41px;
+  padding-bottom: 39px;
   background-color: rgba(255, 255, 255, 0.7);
   color: rgb(13, 96, 111);
 }
@@ -490,9 +508,9 @@ html {
 }
 
 .background-stories {
-  background-image: url("/assets/img/background-stories-min.png");
+  background-image: url("/assets/img/background-stories-min-x2.png");
   background-repeat: no-repeat;
-  background-size: 100% 1331px;
+  background-size: cover;
   background-position-y: 93px;
 }
 
@@ -781,6 +799,33 @@ html {
   font-family: "Aleo";
   font-weight: 700;
   line-height: 1.2rem;
+}
+
+.media {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.media__item {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.media__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.instagram {
+  background-image: url("/assets/logo/instagram.svg");
+}
+
+.youtube {
+  background-image: url("/assets/logo/yuotube.svg");
+}
+
+.twitter {
+  background-image: url("/assets/logo/twitter.svg");
 }
 
 .form-page {

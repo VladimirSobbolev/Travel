@@ -1,0 +1,22 @@
+.footer {
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__paragraph {
+    grid-column: 5/9;
+    margin: 20px auto;
+    text-align: center;
+    font-size: (16rem/20);
+    line-height: (21rem/20);
+  }
+
+  &__media {
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+    grid-column: 11/13;
+  }
+}

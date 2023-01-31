@@ -1,0 +1,26 @@
+.media {
+  @include flex(end);
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    //z-index: 2;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  }
+
+.instagram {
+  background-image: url("/assets/logo/instagram.svg");
+}
+
+.youtube {
+  background-image: url("/assets/logo/yuotube.svg");
+}
+
+.twitter {
+  background-image: url("/assets/logo/twitter.svg");
+}
