@@ -1,0 +1,28 @@
+.travel-stories {
+  padding-bottom: 41px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: $color_brand-secondary;
+
+  &__subject {
+    padding-bottom: 40px;
+  }
+
+  &__stories {
+    margin-top: 40px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto ;
+    padding: 11.5px 33px 11.5px 32px;
+    font-size: (24rem/20);
+    line-height: (32rem/20);
+
+    &:before {
+      content: "\2192";
+      font-size: (40rem/20);
+      display: inline-block;
+      margin-right: 12.5px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.stories {
+  margin-bottom: 40px;
+
+
+}
+
+.story {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
+
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 400px;
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 4px $color-brand-secondary);
+  }
+
+  &__text {
+    grid-column: 2/13;
+  }
+
+  &__excerpt {
+    margin-top: 21px;
+    margin-bottom: 0;
+    font-family: 'Aleo';
+    font-weight: 400;
+    line-height: (24rem/20);
+  }
+
+  &__link {
+    color: inherit;
+    font-family: 'Aleo';
+    font-weight: 700;
+    line-height: (24rem/20);
+  }
+
+}

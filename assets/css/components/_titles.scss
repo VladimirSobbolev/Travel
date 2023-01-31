@@ -15,4 +15,13 @@
   font-size: 2rem;
   line-height: (53rem/20);
   color: $color-brand-primary;
+  text-transform: uppercase;
+}
+
+.caption {
+  margin: 0;
+  font-family: 'Aleo';
+  font-weight: 400;
+  font-size: (35rem/20);
+  line-height: (42rem/20);
 }
